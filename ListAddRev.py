@@ -5,7 +5,7 @@ def reversing(lst):
 	return lst
 #main program starts from here
 print("Enter 2 lists")
-''' map will assign the iterable to a function 
+''' map will assign iterable to a function 
 syntax : map(function,iterable)
 input().split() will take the input as string
 as space seperated'''
