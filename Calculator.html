@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+	function multiplyBy()
+	{
+	num1 = parseInt(document.getElementById("firstnumber").value);
+	num2 = parseInt(document.getElementById("secondnumber").value);
+	if(num1 && num2 && num1>0 && num2>0)
+	{
+		document.getElementById("result").innerHTML = num1 * num2;
+	}
+	}
+
+	function addBy()
+	{
+	 num1 = parseInt(document.getElementById("firstnumber").value);
+	 num2 = parseInt(document.getElementById("secondnumber").value);
+	if(num1 && num2 && num1 > 0 && num2>0)
+	{
+		var x = num1 + num2;
+		document.getElementById("result").innerHTML = x;
+	}
+	else
+	{
+		document.getElementById("result").innerHTML = "Please eneter valid positive numbers";
+	}
+
+	}
+
+	</script>
+
+
+<meta charset=utf-8/>
+
+<title> Javascript program to calculate multiplication and addition of 2 numbers</title>
+
+<style type = "text/css">
+body {margin: 30px;}
+</style>
+
+</head>
+
+
+<body>
+	<form>
+		1st Number : <input type="text" id="firstnumber" /><br>
+		2nd Number : <input type="text" id="secondnumber" /><br>
+		<input type="button" onclick="multiplyBy()" value="Multiply" />
+		<input type="button" onclick="addBy()" value="Add" />
+	</form>
+	
+	
+	
+<p> The result is : <br>
+<span id="result"></span>
+</p>
+</body>
+</html>	
