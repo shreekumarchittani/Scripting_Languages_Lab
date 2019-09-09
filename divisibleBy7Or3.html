@@ -1,0 +1,43 @@
+<!DOCTYPE html >
+<html>
+<head>
+	<script type = "text/javascript">
+	function operation()
+	{
+		parsednum = document.getElementById("num").value;
+		numbers = /^[0-9]+$/;
+		if(parsednum.match(numbers)){
+			if(parsednum%3==0){
+				document.getElementById("result").innerHTML = parsednum + "is divisible by 3";
+			}
+			else if(parsednum%7==0){
+				document.getElementById("result").innerHTML = parsednum + "is divisible by 7";
+			}
+			else{
+				document.getElementById("result").innerHTML = parsednum + "is neither divisible by 3 nor by 7";
+			}
+		}
+		else{
+			document.getElementById("result").innerHTML = parsednum + "is not a number";
+		}
+	}
+	</script>
+<meta charset=utf-8/>
+<style type = "text/css">
+body {margin: 30px;}
+</style>
+
+</head>
+
+
+<body>
+	<form>
+	Enter the number :<input type="text" id="num" /><br>	
+	check for operation : 
+	<input type="button" onclick="operation()" value="click to check" />
+	</form>
+	<p> The result is : <br>
+	<span id="result"></span>
+	</p>
+</body>
+</html>	
