@@ -1,4 +1,3 @@
-console.log("hello")
 function FindMax(){
 	var Mystring = document.getElementById("str").value;
 	var arr = Mystring.split(" ");
