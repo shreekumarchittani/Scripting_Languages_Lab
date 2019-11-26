@@ -1,0 +1,27 @@
+ 
+<!DOCTYPE html>
+
+<html>
+	<head>
+    	<title>ATM</title>
+  	</head>
+
+  	<body>
+
+		<h1> ATM </h1>
+
+		<h3> Your balance is : {{balance}} </h3> <!-- Account Balance displayed here -->
+
+		<h5>{{msg}}</h5> <!-- Error Message displayed here -->
+
+		<!-- Form for amount details, with buttons to Deposit or Withdraw -->
+		<form action="{{url_for('index')}}" method="POST" id="atm">
+		 	Amount : <input name = "amount" type="number" required /><br>
+			<input type="submit" name="action" value="Withdraw">
+			<input type="submit" name="action" value="Deposit">
+		</form>
+
+		<!-- Javascript to validate amount -->
+	</body>
+
+</html>
