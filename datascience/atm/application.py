@@ -17,12 +17,12 @@ def index():
 
     if request.method=="POST":
         if request.form["action"]=="Withdraw":
-            msg = "Kaat liya na"
+            msg = "Debited"
             balance = balance-int(request.form["amount"])
             session["balance"] = balance
             return render_template("index.html",balance=balance,msg=msg)
         elif request.form["action"] == "Deposit":
-            msg = "Bahut ameer aadmi he"
+            msg = "credited"
             balance = balance+int(request.form["amount"])
             session["balance"] = balance
             return render_template("index.html",balance=balance,msg=msg)
