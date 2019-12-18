@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+    	<title>Market</title>
+  	</head>
+
+  	<body>
+
+		<h1> MARKET </h1>
+
+		<h3> Total Amount : {{balance}} </h3> <!-- Account Balance displayed here -->
+
+		<h5>{{msg}}</h5> <!-- Error Message displayed here -->
+
+		<!-- Form for amount details, with buttons to Deposit or Withdraw -->
+		<form action="{{url_for('index')}}" method="POST" id="market">
+		 	<input name = "item1" type="text" required /><br>
+			<input name="item2" type="text" required/><br>
+			<input name="item3" type="text" required/><br>
+			<input type="submit" name='action' /><br>
+			
+		</form>
+	</body>
+</html>

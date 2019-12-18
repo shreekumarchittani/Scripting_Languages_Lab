@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function jsfun(){
+                var v1 = parseInt(document.getElementById('price').value)
+                var v2 = parseInt(document.getElementById('Num').value)
+                var v3 = v1 * v2
+                document.getElementById('res').innerHTML = v3
+                alert("Successfully paid!!")
+            }
+        </script>
+    </head>
+    <body>
+        <select>
+            <option id='milk'>Milk</option>
+            <option id='bread'>Bread</option>
+            <option id='ghee'>Ghee</option>
+        </select><br>
+        Price:<br>
+        <input type='text' id='price'/><br>
+        No of items<br>
+        <input type='text' id='Num'/><br>
+        <input type='submit' onclick="jsfun()"/><br>
+        <p> The Toral price is:<br>
+            <span id='res'></span>
+        </p>    
+    </body>
+</html>    
