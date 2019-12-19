@@ -6,13 +6,7 @@ class Reversing:
     def reverse(self):
         lst = self.sent.split()
         lst.reverse()
-        return lst
-    def getVowelCount(self,mystr):
-        count=0
-        for item in mystr:
-            if item in self.vowels:
-                count = count + 1
-        return count   
+        return lst  
     def vowelCount(self):
         lst = self.sent.split()
         dict = {}
